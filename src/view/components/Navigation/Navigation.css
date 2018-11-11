@@ -1,0 +1,20 @@
+.Navigation {
+    list-style: none;
+}
+
+.Navigation-Link {
+    float: left;
+    margin-right: 30px;
+}
+
+.Navigation-Item {
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial-BoldMT, sans-serif;
+    color: #858585;
+    text-decoration: none;
+}
+
+.Navigation-Item_selected {
+    color: #333333;
+}
