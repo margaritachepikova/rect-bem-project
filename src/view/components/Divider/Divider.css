@@ -1,0 +1,5 @@
+.Divider {
+    border-top: solid 1px #F0F0F0;
+    margin: 0 0 0 -40px;
+    width: calc(100% + 80px);
+}

@@ -1,0 +1,6 @@
+.Page {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

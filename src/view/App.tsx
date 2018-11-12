@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Header } from './components/Header/Header';
+import Page from './components/Page/Page';
 
 export const App = () => (
     <div className="App">
-    <Header />
+    <Page />
     </div>
 );

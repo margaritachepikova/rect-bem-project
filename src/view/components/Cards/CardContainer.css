@@ -1,0 +1,11 @@
+.CardContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 170px);
+    grid-auto-columns: minmax(170px, 170px);
+    grid-auto-rows: minmax(45px, auto);
+    grid-auto-flow: dense;
+    grid-gap: 12px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
