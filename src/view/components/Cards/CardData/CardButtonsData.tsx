@@ -7,7 +7,7 @@ import { ICardData } from '../CardInterfaces';
 const cnCard = cn('Card');
 
 const CardDataTypeButtons: ModBody<ICardData> = ({}, { buttons }) => (
-    <div className={cnCard('Data')}>
+    <div>
         {!!buttons && buttons.map((button, index) =>
             <button key={index} type="button" className={cnCard('Button', {isPrimary: button === 'Да'})}>
                 {button}

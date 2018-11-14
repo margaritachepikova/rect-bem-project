@@ -7,9 +7,7 @@ import { ICardData } from '../CardInterfaces';
 const cnCard = cn('Card');
 
 const CardDataTypeImage: ModBody<ICardData> = ({}, { image }) => (
-    <div className={cnCard('Data')}>
-        <img className={ cnCard('Image') } src={image} />
-    </div>
+    <img className={ cnCard('Image') } src={image} />
 );
 
 export const CardImageData = withBemMod<ICardData>('Card', { type: 'image' }, CardDataTypeImage);

@@ -4,20 +4,17 @@ import * as React from 'react';
 import '../Card.css'
 import { ICardData } from '../CardInterfaces';
 
-const cnCard = cn('Card');
 const cnMeasurements = cn('Measurements');
 
 const CardDataTypeTemperature: ModBody<ICardData> = ({}, { temperature, humidity }) => (
-    <div className={cnCard('Data')}>
-        <div className={cnMeasurements()}>
-            <div className={cnMeasurements('Temperature')}>
-                Температура:
-                <span className={cnMeasurements('Text')}>{temperature}</span>
-            </div>
-            <div className={cnMeasurements('Humidity')}>
-                Влажность:
-                <span className={cnMeasurements('Text')}>{humidity}</span>
-            </div>
+    <div className={cnMeasurements()}>
+        <div className={cnMeasurements('Temperature')}>
+            Температура:
+            <span className={cnMeasurements('Text')}>{temperature}</span>
+        </div>
+        <div className={cnMeasurements('Humidity')}>
+            Влажность:
+            <span className={cnMeasurements('Text')}>{humidity}</span>
         </div>
     </div>
 );

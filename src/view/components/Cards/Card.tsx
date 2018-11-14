@@ -24,18 +24,20 @@ export default class Card extends React.Component<ICardProps> {
             </div>
             {!!description && <div className={cnCard('Description')}>{description}</div>}
             {!!data ?
-                <CardData
-                    type={data.type}
-                    values={data.values}
-                    temperature={data.temperature}
-                    humidity={data.humidity}
-                    albumcover={data.albumcover}
-                    artist={data.artist}
-                    track={data.track}
-                    volume={data.volume}
-                    buttons={data.buttons}
-                    image={data.image}
-                /> :
+                <div className={cnCard('Data')}>
+                    <CardData
+                        type={data.type}
+                        values={data.values}
+                        temperature={data.temperature}
+                        humidity={data.humidity}
+                        albumcover={data.albumcover}
+                        artist={data.artist}
+                        track={data.track}
+                        volume={data.volume}
+                        buttons={data.buttons}
+                        image={data.image}
+                    />
+                </div> :
                 undefined
             }
         </div>;
